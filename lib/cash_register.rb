@@ -13,14 +13,18 @@ class CashRegister
     
     @items << item
     
+    item_info = {}
     item_info[:title] = title
     item_info[:price] = price
     item_info[:quantity] = quantity
+    
     quantity.times do
       @items << item
     end
+    
     @total += price * quantity
     @last_item = item_info
+    
   end
   
   def apply_discount
