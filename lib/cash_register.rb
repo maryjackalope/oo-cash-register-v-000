@@ -14,7 +14,7 @@ class CashRegister
     @price = price
     @quantity = quantity
     @quantity.times do 
-    @all_items << item
+    @items << item
     end
   end
   
